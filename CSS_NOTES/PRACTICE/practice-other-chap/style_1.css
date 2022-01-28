@@ -1,0 +1,22 @@
+#second{
+    background-color: rgb(39, 142, 173);
+}
+.red{
+    background-color: red;
+    color: seashell;
+}
+h1,h3{
+    color: red;
+}
+header{
+    background-color: sandybrown;
+}
+.blue,h4{
+    background-color: seagreen;
+    color: seashell;
+}
+/* "*" or astrick is UNIVERSAL SELCTOR  */
+*{
+    margin: 0;
+    padding: 0;
+}

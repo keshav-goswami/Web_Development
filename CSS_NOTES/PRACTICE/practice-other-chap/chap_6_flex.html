@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: black;
+            color: cornsilk;
+            height: 5vh;
+            padding: 10px 1px;
+        }
+        nav ul li{
+            display: inline;
+            font-size: larger;
+            font-family: cursive,-apple-system;
+            padding: 8px 7px;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: lightgoldenrodyellow;
+            height: 80vh;
+            align-items: center;
+        }
+        .box1{
+            background-color: crimson;
+            width: 250px; /*if here height and width are in vh or vw then flex wrap won't work */
+            height: 350px;
+            display: inline-block;
+            border: 2px solid black;
+        }
+        .box2{
+            background-color: darkblue;
+            width: 250px;
+            height: 350px;
+            display: inline-block;
+            border: 2px solid black;
+
+        }
+        .box3{
+            background-color:crimson;
+            width: 250px;
+            height: 350px;
+            display: inline-block;
+            border: 2px solid black;
+
+        }
+        .box4{
+            background-color: darkblue;
+            width: 250px;
+            height: 350px;
+            display: inline-block;
+            border: 2px solid black;
+        }
+        .box5{
+            background-color: crimson;
+            width: 250px;
+            height: 350px;
+            display: inline-block;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="box1">
+                    <big>BOX1</big>
+                </div>
+                <div class="box2">
+                    <big>BOX2</big>
+                </div>
+                <div class="box3">
+                    <big>BOX3</big>
+                </div>
+                <div class="box4">
+                    <big>BOX4</big>
+                </div>
+                <div class="box5">
+                    <big>BOX5</big>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

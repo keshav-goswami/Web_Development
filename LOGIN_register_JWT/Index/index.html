@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register_Here</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background-color: khaki;
+      }
+      h1 {
+        position: absolute;
+        color: red;
+        font-size: 60px;
+      }
+      .container {
+        margin-top: 20vh;
+        background-color: aquamarine;
+        height: 40vh;
+        width: 60vw;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        border: 20px solid green;
+        border-radius: 40px;
+      }
+      #reg_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #username {
+        height: 40px;
+        width: 30vw;
+        font-size: 18px;
+        outline: none;
+        border-radius: 8px;
+        border: none;
+        margin: 5px;
+      }
+      #password {
+        height: 40px;
+        width: 30vw;
+        font-size: 18px;
+        outline: none;
+        border-radius: 8px;
+        border: none;
+        margin: 5px;
+      }
+      #reg_form input {
+        padding-left: 20px;
+      }
+      #btn {
+        height: 40px;
+        width: 10vw;
+        font-size: x-large;
+        color: white;
+        background-color: red;
+        border-radius: 10px;
+        align-self: center;
+      }
+      #btn_L {
+        position: absolute;
+        top: 68vh;
+        right: 45vw;
+        height: 40px;
+        width: 10vw;
+        font-size: x-large;
+        color: white;
+        background-color: red;
+        border-radius: 10px;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>REGISTER HERE</h1>
+    <div class="container">
+      <form id="reg_form" method="POST">
+        <input type="text" placeholder="username" id="username" />
+        <input
+          type="text"
+          autocomplete="off"
+          placeholder="password"
+          id="password"
+        />
+        <input type="submit" value="Submit" id="btn" />
+      </form>
+      <a href="/login"><input type="button" value="Login Page" id="btn_L" /></a>
+    </div>
+    <script>
+      let form = document.getElementById("reg_form");
+      form.addEventListener("submit", registerUser);
+
+      async function registerUser(event) {
+        event.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        const result = await fetch("/api/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username,
+            password,
+          }),
+        }).then((res) => res.json());
+        console.log(result);
+        if (result.status === "ok") {
+          // everythign went fine
+          alert("Submitted");
+        } else {
+          alert(result.message);
+        }
+      }
+    </script>
+  </body>
+</html>

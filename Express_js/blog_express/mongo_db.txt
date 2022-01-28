@@ -1,0 +1,12 @@
+db.Prac.insert([{
+    'name':'Harshit',
+    'section':'A'
+},
+{
+    'name':'Borredy',
+    'section':'B'
+},
+{
+    'name':'Bloomy',
+    'section':'ML'
+}])

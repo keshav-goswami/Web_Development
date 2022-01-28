@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+html{
+    scroll-behavior: smooth ;
+}
+.navbar{
+    height: 10vh;
+    display: flex;
+    position: sticky;
+    top:0;
+    max-width: 100vw;
+}
+#logo1{
+    width: 3vw;
+    height: 3vw;
+    border: .3vw solid darkgrey;
+    border-radius: 100px;
+}
+#logo2{
+    width: 10vw;
+    height: 10vw;
+    border: .5vw solid darkgrey;
+    border-radius: 100px;
+    margin-top: -80px;
+}
+.nav-list{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-list li a{
+    font-family: 'Balsamiq Sans', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    padding: 0px 10px;
+}
+.nav-list li a:hover{
+    color:darkgrey;
+}
+.burger{
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    display: none;
+}
+.line{
+    width:33px;
+    height: 4px;
+    margin: 3px 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.right-nav{
+    width: 30%;
+    text-align: right;
+    align-self: center;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+#search{
+    margin-right: 5px;
+    height: 3.5vh;
+    width: 18vw;
+    border: none;
+    border-radius: 20px;
+    padding:3px 15px;
+    font-size: large;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.btn{
+    height: 35px;
+    padding:0px 4px;
+    margin-bottom: 12px;
+    border:4px solid darkgrey;
+    border-radius: 10px;
+    background:none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+.s-btn{
+    height: 33px;
+    padding:0px 5px;
+    border:3px solid darkgrey;
+    border-radius: 10px;
+    background:none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.s-btn:hover{
+    color: black;
+    background-color: white;
+}
+.background{
+    background-image: url(/Education_hub/pic-bakc.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.container{
+    max-width: 100vw;
+    height: 100vh;
+}
+.box{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+.first{
+    display: flex;
+    width: 35vw;
+    height: 30vh;
+    color : white;
+    flex-direction: column;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.l-text{
+    font-size: xx-large;
+    font-family: 'Balsamiq Sans', cursive;
+    padding:10px;
+}
+.s-text{
+    font-size: medium;
+    font-family: 'Balsamiq Sans', cursive;
+    padding:10px;
+}
+.buttons{
+    padding:15px;
+}
+.search-list{
+    position: absolute;
+    width: 16vw;
+    right:8vw;
+    top:40px;
+    display: none;
+    margin-top: 0;
+}
+.u-search-list{
+    display: inline;
+    margin-top: 2vh;
+    padding-top: 4vh;
+}
+.b-search-list{
+    position: absolute;
+    width: 40vw;
+    right: 28vw;
+    top: 272px;
+}
+.s-list li a{
+    text-decoration: none;
+    color: white;
+}
+.s-list li{
+    list-style: none;
+    background-color: black;
+    opacity: 0.6;
+    margin: 3px;
+}
+.blogs{
+    background-color: darkgrey;
+}
+.blogs-r{
+    display: flex;
+    width: 70vw;
+    padding:6vh 13vw;
+}
+.blogs-l{
+    display: flex;
+    width: 70vw;
+    flex-direction: row-reverse; 
+    padding-left: 13vw;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.thumbnail img{
+    width: 15vw;
+    height: 13vw;
+    border: .5vw solid white;
+    border-radius: 4vw;
+}
+.heading{
+    font-weight: bolder;
+    margin: 30px;
+    font-size: xx-large;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom,rgb(105, 104, 104),white);
+}
+.Contact h1{
+    padding:30px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.Contact input{
+    height: 40px;
+    border-radius: 20px;
+    padding:0px 20px;
+    width: 50vw;
+    margin:20px;
+    font-size: large;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#C-btn{
+    font-size: large;
+    height: 40px;
+    width: 20vw;
+    color: black;
+    margin-bottom: 20px;
+}
+footer{
+    padding:25px;
+    color:white;
+    background-color: rgb(51, 50, 50);
+    text-align: center;
+    height: 12vh;
+}
+.social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}

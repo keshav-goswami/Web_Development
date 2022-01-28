@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 400px;
+    height: 1500px;
+    background-image: url("Screenshot (67).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid green;
+    background-attachment: local;
+}
+.back{
+    /* width: 1500px; */
+    width: 140px;
+    /* background-size: 1230px 1290px;
+    background-image: url('Screenshot (68).png');
+    background-repeat: no-repeat; */
+    /* background-size: auto; */
+}
+.green{
+    /* background-image: url('Screenshot (68).png');
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+.red{
+    background-color: red;
+    color: white;
+}

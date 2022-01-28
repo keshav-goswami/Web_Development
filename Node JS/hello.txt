@@ -1,0 +1,2 @@
+hello this is a text file i will be fetching content from this file and will be displaying it in console using node JS.
+this will be my first node JS from . I have already installed the node JS in my window. So, lets get started.
